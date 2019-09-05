@@ -1,8 +1,3 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,19 +7,28 @@
 
 	<!-- CSS stylesheets-->
 	<style>
-		body: {
-			color: red,
-			font-color: blue
+		body {
+			background-color: red;
+			color: blue;
 		}
 	</style>
 
 	<!-- Javascript imports -->
 	<script>
-		console.log('Javascript is working!')
+		console.log('Javascript is working!');
 	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	
-	<body>
-		Hello, Ciencia!
+	<body> 
+	<div ng-app="">
+		<h1>Hello, Ciencia {{guestName}}!</h1>
+		<p>These are some good videos of new-science!</p>
+		<a href="https://www.youtube.com/watch?v=w9oTw0cPjyA">1</a>
+		<a href="https://www.youtube.com/watch?v=rRVh9QFA8iE">2</a>
+		<a href="https://www.youtube.com/watch?v=TLg4YlAgVhk">3</a>
+		<hr>
+		Say something: <input type="text" ng-model="guestName">
+	</div>
 	</body>
 
 </head>
